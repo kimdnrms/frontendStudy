@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+		<title>google_homework</title>
+		<link rel = "stylesheet" type = "text/css" href = "google_homework_css.css">
+	</head>
+
+
+	<script type="text/javascript">
+		function inactive(){
+			var obj = document.getElementById("searchContents");			
+ 		}
+
+ 		function over_topContainer_item_c(){
+ 			var tmp = document.getElementById("topContainer_item_img_c");
+ 			tmp.src = "./img/headMenu_app_over.png";
+ 		}
+
+ 		function out_topContainer_item_c(){
+ 			var tmp = document.getElementById("topContainer_item_img_c");
+ 			tmp.src = "./img/headMenu_app.png";
+ 		}
+ 		function over_topContainer_item_d(){
+ 			var tmp = document.getElementById("topContainer_item_img_d");
+ 			tmp.src = "./img/headMenu_alarm_over.png";
+ 		}
+
+ 		function out_topContainer_item_d(){
+ 			var tmp = document.getElementById("topContainer_item_img_d");
+ 			tmp.src = "./img/headMenu_alarm.png";
+ 		}
+ 		function over_topContainer_item_keyboard(){
+ 			var tmp = document.getElementById("searchBarContents_keyboard");
+ 			tmp.src = "./img/keyboard_over.png";
+ 		}
+ 		function out_topContainer_item_keyboard(){
+ 			var tmp = document.getElementById("searchBarContents_keyboard");
+ 			tmp.src = "./img/keyboard.png";
+ 		}
+ 		function over_topContainer_item_searchButton(){
+ 			var tmp = document.getElementById("googleButton_search");
+ 			tmp.style.border= " 1px solid #a0a0a0";	
+ 			document.getElementById("googleButton_search").style.color = "#3e3e3e";	
+ 		}
+ 		function out_topContainer_item_searchButton(){
+ 			var tmp = document.getElementById("googleButton_search");
+ 			tmp.style.border= "none";
+ 			document.getElementById("googleButton_search").style.color = "#757575";	
+ 		}
+
+ 		function onclicksearchButton(){
+ 			var tmp = document.getElementById("googleButton_search");
+ 			tmp.style.border= " 1px solid #007FFF";	 				
+ 		}
+
+
+ 		function over_topContainer_item_luckyButton(){
+ 			var tmp = document.getElementById("googleButton_lucky");
+ 			tmp.style.border= " 1px solid #a0a0a0";
+ 			document.getElementById("googleButton_lucky").style.color = "#3e3e3e";	
+ 		}
+ 		function out_topContainer_item_luckyButton(){
+ 			var tmp = document.getElementById("googleButton_lucky");
+ 			tmp.style.border= "none";
+ 			document.getElementById("googleButton_lucky").style.color = "#757575";
+ 		}
+ 		function showTapApp(){
+			var tmp = document.getElementById("topContainer_tap_App");
+			tmp.style.display = "show";
+ 		}
+		function showTapAlarm(){
+			var tmp = document.getElementById("topContainer_tap_Alarm");
+			tmp.style.display = "show";	
+ 		}
+ 		function showTapProfile(){
+			var tmp = document.getElementById("topContainer_tap_Profile");
+			tmp.style.display = "show";	
+ 		}	
+	</script>
+
+	<body style="margin: 10px 15px 10px 10px;">
+		<div id="topContainer" >
+				<div id="topContainer_tap">
+				</div>
+				<div id="topContainer_button">	
+					<div class="topContainer_item_a" ><span class="topContainer_item" style=" width: 34px; ">Gmail</span></div>
+					<div class="topContainer_item_b" ><span class="topContainer_item" style=" width: 41px; line-height: 25px; ">이미지</span></div>
+					<div id="topContainer_img_button">
+						<div class="topContainer_item_c" ><img class="topContainer_item_img" id="topContainer_item_img_c" src="./img/headMenu_app.png" style="width: 26px; height: 25px; " onmouseover="over_topContainer_item_c()" onmouseout="out_topContainer_item_c()" onclick="showTapApp()">
+							<span class="tooltiptext">Google 앱</span>
+						</div>
+						<div class="topContainer_item_d" ><img class="topContainer_item_img" id="topContainer_item_img_d" src="./img/headMenu_alarm.png" onmouseover="over_topContainer_item_d()" onmouseout="out_topContainer_item_d()" onclick="showTapAlarm()" >
+						</div>
+						<div class="topContainer_item_e" ><img class="topContainer_item_img" src="./img/headMenu_profile.png" style="margin-top: 0px" onclick="showTapProfile()">							
+						</div>
+					</div>
+				</div>
+		</div>
+		<div id="mainLogo_box" >
+			<div id="mainLogo" >
+				<img src="./img/googlelogo.png" style="width: 100%; height: 100%; ">	
+				<div style="float: right; padding-right: 25px; color:#007FFF ; z-index: 10; position: relative; top:-25px">한국</div>
+			</div>
+		</div>
+		<div id="searchBarContainer">
+				<div id="searchBar">
+					<div class="searchBarContents" >
+						<input type="text" id="searchContents" name="searchContents" style="padding:0px 10px 0px 10px ; border:none ; min-width: 462px; height: 24px line-height: 20px; font-size: 20px; position: relative; top: -15px;" onclick="inactive()" >
+					</div>
+					<dir class="searchBarContents" >
+						<img id="searchBarContents_keyboard" src="./img/keyboard.png" style="width: 100%; max-height: 42px; " onmouseover="over_topContainer_item_keyboard()" onmouseout="out_topContainer_item_keyboard()" >	
+					</dir>
+					<div class="searchBarContents" >
+						<img src="./img/mic.png" style="width: 100%; max-height: 42px; ">
+					</div>				
+				</div>
+		
+			<div id="googleButton_Container" style="text-align: center;">
+				<div class="googleButton" id="googleButton_search" style="width: 103px" onmouseover="over_topContainer_item_searchButton()" onmouseout="out_topContainer_item_searchButton()" onclick="onclicksearchButton()" >
+					Google 검색
+				</div>
+				<div class="googleButton" id="googleButton_lucky" style="width: 140px" onmouseover="over_topContainer_item_luckyButton()" onmouseout="out_topContainer_item_luckyButton()" >	
+					<a href="https://www.google.com/doodles" style="text-decoration:none; color:#757575;">	I'm Feeling Lucky</a>
+				</div>
+			</div>
+		</div>
+		 <div id="google_search-bottom">
+                <div class="google_search-bottom-link_box">
+                    <div class="google_search-bottom-link_box-left">
+                        <a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/intl/ko/ads/?fg=1">광고</a>
+                        <a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/services/?fg=1">비즈니스</a>
+                        <a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/intl/ko/about.html?fg=1">Google 정보</a>
+                    </div>
+                    <div class="google_search-bottom-link_box-right">
+                        <a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/intl/ko/policies/privacy/?fg=1">개인정보처리방침</a>
+                        <a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/intl/ko/policies/terms/?fg=1">약관</a>
+                        <a class="google_search-bottom-link_box-a">설정</a>
+                    </div>
+                </div>
+            </div>
+
+
+	</body>	
+
+<!--	<div style="position: fixed; bottom:0px; left: -2px; background-color: #f2f2f2; border-top: 1px solid #e4e4e4;line-height: 40px; max-height:40px; width:101%; !min-width: 980px;">
+			<div style="position:relative; display: inline-block; float: left;" >광고</div>
+			<div style="position:relative; display: inline-block; float: left;">비즈니스</div>
+			<div style="position:relative; display: inline-block; float: left;">Google 정보</div>
+			<div style="position:relative; display: inline-block; float: right;">개인정보처리방침</div>
+			<div style="position:relative; display: inline-block; float: right;">약관</div>
+			<div style="position:relative; display: inline-block; float: right;">설정</div>
+
+		</div>
+-->
+
+<div id="topContainer_tap_App" style="width: 322px; height: 598px; background-color:#FFFFFF; display:none; position: fixed; z-index: 10000; top: 30px; left: 100px" >
+	
+</div>
+<div id="topContainer_tap_Alarm" style="width: 376px; height: 382px; background-color:#FFFFFF; display:none; position: fixed; z-index: 10000; top: 30px; left: 100px" >
+	
+</div>
+<div id="topContainer_tap_Profile" style="width: 356px; height: 199px; background-color:#FFFFFF; display:none; position: fixed; z-index: 10000; top: 30px; left: 100px" >
+	
+</div>
+</html>
