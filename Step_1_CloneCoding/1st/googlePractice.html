@@ -7,98 +7,80 @@
 	<script type="text/javascript" src="googlePracticeJs.js"></script>
 </head>
 
-<body style="margin: 10px 15px 10px 10px;">
+<body style="margin: 10px 15px 10px 10px; height: 100%; overflow-y: hidden ;">
 	<div>
 		<div id="topContainer_tap">
 		</div>
 		<div id="topContainer_button">
-			<div class="topContainer_item_gmail">
+			<div id="topContainer_item_gmail">
 				<span class="topContainer_item" style="width: 34px;">Gmail</span>
 			</div>
-			<div class="topContainer_item_image">
+			<div id="topContainer_item_image">
 				<span class="topContainer_item" style="width: 41px; line-height: 25px;">이미지</span>
 			</div>
-			<div class="topContainer_item_app">
+			<div id="topContainer_item_app">
 				<img 
 					class="topContainer_item_img"
 					id="topContainer_item_img"
 					src="./img/headMenu_app.png"
 					style="width: 26px; height: 25px; " 
-					onmouseover="over_topContainer_item_app()"
-					onmouseout="out_topContainer_item_app()" 
-					onclick="showTapApp()"
+					onmouseover="mouseover_topContainer_item_app()"
+					onmouseout="mouseout_topContainer_item_app()" 
+					onclick="showModalTapApp()"
 				>
 				<span class="tooltiptext">Google 앱</span>
 			</div>
-			<div class="topContainer_item_profile">
+			<div id="topContainer_item_profile">
 				<img
 					class="topContainer_item_img"
 					src="./img/headMenu_profile.png"
-					onclick="showTapProfile()"
+					onclick="showModalTapProfile()"
 				>
 			</div>
 		</div>
 	</div>
-	<div id="mainLogo_box">
-		<div id="mainLogo">
-			<img src="./img/googlelogo.png" style="width: 100%; height: 100%; ">
+	<div id="mainLogo">
+		<img src="./img/googlelogo.png" style="width: 100%; height: 100%; ">
+	</div>
+	<div id="searchBarWrapper">
+		<div class="searchBarContents">
+			<img id="searchIcon" src="./img/magnifyglass.png">
+		</div>
+		<div class="searchBarContents">
+			<input
+				id="searchInputBox" 
+				type="text"
+				onclick="onFocusSearchInputBox()">
+		</div>
+		<div class="searchBarContents">
+			<img id="micButton" src="./img/mic.png">
 		</div>
 	</div>
-	<div id="searchBarContainer">
-		<div id="searchBar">
-			<div class="searchBarContents">
-				<input type="text" id="searchContents" name="searchContents"
-					style="padding:0px 10px 0px 10px ; border:none ; min-width: 462px; height: 24px; line-height: 20px; font-size: 20px; position: relative; top: -15px;"
-					onclick="inactive()">
+	<div id="mostVisited"> 
+		<div id="mostVisitedItemContainer">
+			<div 
+				class="mostVisitedItem" 
+				id="addMostVisited"
+				onmouseover="mouseover_mostVisitedContainer_item_app()"
+				onmouseout="mouseout_mostVisitedContainer_item_app()"  
+			>
+				<img 
+					id="addMostVistedButtonIcon" 
+					src="./img/addMostVistedButton.png"
+					onclick="addButton()"
+				>
+				<span class="mostVisitedItemTitle">바로가기 추가</span>
 			</div>
-			<div class="searchBarContents">
-				<img src="./img/mic.png" style="width: 100%; max-height: 42px; ">
-			</div>
-		</div>
-
-		<div id="googleButton_Container" style="text-align: center;">
-			<div class="googleButton" id="googleButton_search" style="width: 103px"
-				onmouseover="over_topContainer_item_searchButton()" onmouseout="out_topContainer_item_searchButton()"
-				onclick="onclicksearchButton()">
-				Google 검색
-			</div>
-			<div class="googleButton" id="googleButton_lucky" style="width: 140px"
-				onmouseover="over_topContainer_item_luckyButton()" onmouseout="out_topContainer_item_luckyButton()">
-				<a href="https://www.google.com/doodles" style="text-decoration:none; color:#757575;"> I'm Feeling
-					Lucky</a>
-			</div>
-		</div>
+		</div>	
 	</div>
-	<div id="google_search-bottom">
-		<div class="google_search-bottom-link_box">
-			<div class="google_search-bottom-link_box-left">
-				<a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/intl/ko/ads/?fg=1">광고</a>
-				<a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/services/?fg=1">비즈니스</a>
-				<a class="google_search-bottom-link_box-a" href="http://www.google.co.kr/intl/ko/about.html?fg=1">Google
-					정보</a>
-			</div>
-			<div class="google_search-bottom-link_box-right">
-				<a class="google_search-bottom-link_box-a"
-					href="http://www.google.co.kr/intl/ko/policies/privacy/?fg=1">개인정보처리방침</a>
-				<a class="google_search-bottom-link_box-a"
-					href="http://www.google.co.kr/intl/ko/policies/terms/?fg=1">약관</a>
-				<a class="google_search-bottom-link_box-a">설정</a>
+	<template class="newDIVtemplate">
+		<div class="mostVisitedItem">
+			<button onclick="deleteButton()"> Delete </button>
+			<div>
+				<span> asdf </span>
 			</div>
 		</div>
-	</div>
+	</template>
 </body>
-
-<div id="topContainer_tap_App"
-	style="width: 322px; height: 598px; background-color:#FFFFFF; display:none; position: fixed; z-index: 10000; top: 30px; left: 100px">
-
-</div>
-<div id="topContainer_tap_Alarm"
-	style="width: 376px; height: 382px; background-color:#FFFFFF; display:none; position: fixed; z-index: 10000; top: 30px; left: 100px">
-
-</div>
-<div id="topContainer_tap_Profile"
-	style="width: 356px; height: 199px; background-color:#FFFFFF; display:none; position: fixed; z-index: 10000; top: 30px; left: 100px">
-
-</div>
 
 </html>

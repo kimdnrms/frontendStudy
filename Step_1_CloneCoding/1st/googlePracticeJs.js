@@ -1,52 +1,47 @@
-function inactive() {
+const inactive = () => {
     var obj = document.getElementById("searchContents");
 }
 
-function over_topContainer_item_app() {
+const mouseover_topContainer_item_app = () => {
     var tmp = document.getElementById("topContainer_item_img");
     tmp.src = "./img/headMenu_app_over.png";
 }
-function out_topContainer_item_app() {
+
+const mouseout_topContainer_item_app = () => {
     var tmp = document.getElementById("topContainer_item_img");
     tmp.src = "./img/headMenu_app.png";
 }
 
-function over_topContainer_item_searchButton() {
-    var tmp = document.getElementById("googleButton_search");
-    tmp.style.border = " 1px solid #a0a0a0";
-    document.getElementById("googleButton_search").style.color = "#3e3e3e";
-}
-function out_topContainer_item_searchButton() {
-    var tmp = document.getElementById("googleButton_search");
-    tmp.style.border = "none";
-    document.getElementById("googleButton_search").style.color = "#757575";
+const showModalTapApp = () => {
+
 }
 
-function onclicksearchButton() {
-    var tmp = document.getElementById("googleButton_search");
-    tmp.style.border = " 1px solid #007FFF";
+const showModalTapProfile = () => {
+
+}
+
+const onFocusSearchInputBox = () => {
+    
 }
 
 
-function over_topContainer_item_luckyButton() {
-    var tmp = document.getElementById("googleButton_lucky");
-    tmp.style.border = " 1px solid #a0a0a0";
-    document.getElementById("googleButton_lucky").style.color = "#3e3e3e";
+const mouseover_mostVisitedContainer_item_app = () => {
+    document.getElementsByClassName("mostVisitedItem").style.backgroundColor = "rgba(238,238,238,1)";
 }
-function out_topContainer_item_luckyButton() {
-    var tmp = document.getElementById("googleButton_lucky");
-    tmp.style.border = "none";
-    document.getElementById("googleButton_lucky").style.color = "#757575";
+
+const mouseout_mostVisitedContainer_item_app = () => {
+    document.getElementsByClassName("mostVisitedItem").style.backgroundColor = "rgba(255,255,255)";
+
 }
-function showTapApp() {
-    var tmp = document.getElementById("topContainer_tap_App");
-    tmp.style.display = "show";
+
+const showModalAddMostVisited = () => {
+
 }
-function showTapAlarm() {
-    var tmp = document.getElementById("topContainer_tap_Alarm");
-    tmp.style.display = "show";
+
+const addButton = () => {
+    let areaDiv = document.getElementById("mostVisitedItemContainer");
+    
+    const template = document.querySelector('.newDIVtemplate');
+    const clone = document.importNode(template.content, true);
+    areaDiv.appendChild(clone);
 }
-function showTapProfile() {
-    var tmp = document.getElementById("topContainer_tap_Profile");
-    tmp.style.display = "show";
-}	
