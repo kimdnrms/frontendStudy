@@ -3,82 +3,81 @@
 
 <head>
 	<title>googlePractice</title>
-	<link rel="stylesheet" type="text/css" href="googlePracticeStyle.css">
-	<script type="text/javascript" src="googlePracticeJs.js"></script>
+	<link rel='stylesheet' type='text/css' href='googlePracticeStyle.css'>
+	<script type='text/javascript' src='googlePracticeJs.js'></script>
 </head>
 
-<body style="margin: 10px 15px 10px 10px; height: 100%; overflow-y: hidden ;">
+<body style='margin: 10px 15px 10px 10px; height: 100%; overflow-y: hidden ;'>
 	<div>
-		<div id="topContainer_tap">
+		<div id='topContainer_tap'>
 		</div>
-		<div id="topContainer_button">
-			<div id="topContainer_item_gmail">
-				<span class="topContainer_item" style="width: 34px;">Gmail</span>
+		<div id='topContainer_button'>
+			<div id='topContainer_item_gmail'>
+				<span class='topContainer_item' style='width: 34px;'>Gmail</span>
 			</div>
-			<div id="topContainer_item_image">
-				<span class="topContainer_item" style="width: 41px; line-height: 25px;">이미지</span>
+			<div id='topContainer_item_image'>
+				<span class='topContainer_item' style='width: 41px; line-height: 25px;'>이미지</span>
 			</div>
-			<div id="topContainer_item_app">
+			<div id='topContainer_item_app'>
 				<img 
-					class="topContainer_item_img"
-					id="topContainer_item_img"
-					src="./img/headMenu_app.png"
-					style="width: 26px; height: 25px; " 
-					onmouseover="mouseover_topContainer_item_app()"
-					onmouseout="mouseout_topContainer_item_app()" 
-					onclick="showModalTapApp()"
+					class='topContainer_item_img'
+					id='topContainer_item_img'
+					src='./img/headMenu_app.png'
+					style='width: 26px; height: 25px; ' 
+					onmouseover='mouseover_topContainer_item_app()'
+					onmouseout='mouseout_topContainer_item_app()' 
+					onclick='showModalTapApp()'
 				>
-				<span class="tooltiptext">Google 앱</span>
+				<span class='tooltiptext'>Google 앱</span>
 			</div>
-			<div id="topContainer_item_profile">
+			<div id='topContainer_item_profile'>
 				<img
-					class="topContainer_item_img"
-					src="./img/headMenu_profile.png"
-					onclick="showModalTapProfile()"
+					class='topContainer_item_img'
+					src='./img/headMenu_profile.png'
+					onclick='showModalTapProfile()'
 				>
 			</div>
 		</div>
 	</div>
-	<div id="mainLogo">
-		<img src="./img/googlelogo.png" style="width: 100%; height: 100%; ">
+	<div id='mainLogo'>
+		<img src='./img/googlelogo.png' style='width: 100%; height: 100%;'>
 	</div>
-	<div id="searchBarWrapper">
-		<div class="searchBarContents">
-			<img id="searchIcon" src="./img/magnifyglass.png">
+	<div id='searchBarWrapper'>
+		<div class='searchBarContents'>
+			<img id='searchIcon' src='./img/magnifyglass.png'>
 		</div>
-		<div class="searchBarContents">
+		<div class='searchBarContents'>
 			<input
-				id="searchInputBox" 
-				type="text"
-				onclick="onFocusSearchInputBox()">
+				id='searchInputBox' 
+				type='text'
+				onclick='onFocusSearchInputBox()'>
 		</div>
-		<div class="searchBarContents">
-			<img id="micButton" src="./img/mic.png">
+		<div class='searchBarContents'>
+			<img id='micButton' src='./img/mic.png'>
 		</div>
 	</div>
-	<div id="mostVisited"> 
-		<div id="mostVisitedItemContainer">
+	<div id='mostVisited'>	
+		<div id='addedMostVisited'>
+
+		</div> 
+		<div id='mostVisitedItemContainer'>
 			<div 
-				class="mostVisitedItem" 
-				id="addMostVisited"
-				onmouseover="mouseover_mostVisitedContainer_item_app()"
-				onmouseout="mouseout_mostVisitedContainer_item_app()"  
+				class='mostVisitedItem' 
+				onmouseover='mouseover_mostVisitedContainer_item_app()'
+				onmouseout='mouseout_mostVisitedContainer_item_app()'
+				onclick='addOKButton()'  
 			>
-				<img 
-					id="addMostVistedButtonIcon" 
-					src="./img/addMostVistedButton.png"
-					onclick="addButton()"
-				>
-				<span class="mostVisitedItemTitle">바로가기 추가</span>
+				<div id='addMostVistedButtonIcon'>
+					<div id='cross'></div>
+				</div>
+				<span class='mostVisitedItemTitle'>바로가기 추가</span>
 			</div>
 		</div>	
 	</div>
-	<template class="newDIVtemplate">
-		<div class="mostVisitedItem">
-			<button onclick="deleteButton()"> Delete </button>
-			<div>
-				<span> asdf </span>
-			</div>
+	<template class='newAddedMostVistedTemplate'>	
+		<button onclick='deleteButton()'> Delete </button>
+		<div>
+			<span> asdf </span>
 		</div>
 	</template>
 </body>

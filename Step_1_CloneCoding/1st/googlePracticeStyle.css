@@ -230,15 +230,62 @@
 	line-height: var(--md-title-height); */
 }
 
-#addMostVistedButtonIcon{
+/* #addMostVistedButtonIcon{
 	width: 48px;
 	height: 48px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 24px;
-}
+} */
 
 input:focus {
 	outline: none;
 }
+
+
+#addMostVistedButtonIcon {
+	background-color:rgba(238,238,238,1);
+	width:48px;
+	height:48px;
+	border-radius:50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+	/* text-align:center;
+	margin:0 auto;
+	font-size:12px;
+	vertical-align:middle;
+	line-height:150px; */
+}
+
+#cross {
+	background: black;
+	height: 20px;
+	top: 13px;
+	left: 23px;
+	position: relative;
+	width: 4px;
+  }
+  #cross:after {
+	background: black;
+	content: "";
+	height: 4px;
+	left: -8px;
+	position: absolute;
+	top: 8px;
+	width: 20px;
+  }
+
+
+
+/* 
+.listClass {
+    border: 1px solid black;
+    margin: 5px;
+    width: 300px;
+    height: 100px;
+    z-index: 1;
+    background-color: lightgray;
+} */
