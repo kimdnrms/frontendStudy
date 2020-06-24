@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            TestCode
+        </title>
+        <script type="text/javascript" src="testCode.js"></script>
+        <link rel="stylesheet" type="text/css" href="testCode.css">
+
+    </head>
+    <body>
+        <button onclick="addButton()"> Click button </button>
+        <div id="listContainer">
+            <div id='confirmModal'>
+                <div>
+                    <span> Really Delete? </span>
+                </div>
+                <div>
+                    <button onclick="okDeleteButton()"> ok </button>
+                    <button onclick="cancelDeleteButton()"> cancel </button>
+                </div>
+            </div>
+            <div id='deleteOKModal'>
+                <div>
+                    <span> deleted </span>
+                </div>
+                <button onclick="confirmDeleteButton()"> ok </button>
+            </div>
+        </div>
+    </body>
+    <template class="newDIVtemplate">
+        <button style="float: right;" onclick="deleteButton()"> Delete </button>
+        <div>
+            <span> asdfasdfasdf </span>
+        </div>
+    </template>
+    <!-- <template class="confirmModaltemplate">
+        <div class='confirmModalClass'>
+            <div>
+                <span> Really Delete? </span>
+            </div>
+            <div>
+                <button onclick="okDeleteButton()"> ok </button>
+                <button onclick="cancelDeleteButton()"> cancel </button>
+            </div>
+        </div>
+    </template>
+    <template class="deleteOKModaltemplate">
+        <div class='deleteOKModalClass'>
+            <div>
+                <span> deleted </span>
+            </div>
+            <button onclick="confirmDeleteButton()"> ok </button>
+        </div>
+    </template> -->
+
+</html>
+
