@@ -1,0 +1,23 @@
+
+#questionMarkWrapper {
+  float: left;
+  width: 20px;
+  height: 40px;
+}
+
+#questionMark {
+  margin-top: 2px;
+  width: 14px;
+  height: 14px;
+  line-height: 13px;
+  font-size: 8pt;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  border: 1px solid #000000;
+}
+
+#errorInfoContents { 
+  font-size: 9pt;
+  margin-bottom: 30px;
+}

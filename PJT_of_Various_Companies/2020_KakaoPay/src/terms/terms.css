@@ -1,0 +1,14 @@
+.termsContainer {
+  margin-bottom: 10px;
+}
+
+.termsArea {
+  text-decoration: none;
+  font-size: 10pt;
+  padding: 2px 0;
+}
+
+.selectedAllTermsArea {
+  margin: 15px 0;
+  font-size: 12pt;
+}

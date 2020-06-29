@@ -1,0 +1,13 @@
+#titleContainer {
+  margin-bottom: 10px;
+}
+
+#title {
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+#titleDescription {
+  color: #258076;
+  font-size: 8pt;
+}

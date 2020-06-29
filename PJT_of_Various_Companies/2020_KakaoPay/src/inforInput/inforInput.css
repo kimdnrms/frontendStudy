@@ -1,0 +1,111 @@
+.descriptionClass {
+  font-size: 8pt;
+  color: #4f4f4f;
+}
+
+.dataValidationFailed {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+/***********************/
+
+#selectedTelecomCompany {  
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: #4f4f4f;
+}
+
+#telecomCompanySelector {
+  margin-bottom: 20px;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #7d7d7d;
+}
+
+#telecomCompanySelector select {
+  background-color: #e3e3e3; 
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  border: 0px solid black;
+}
+
+/***********************/
+
+#phoneNumberInputForm {
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #7d7d7d;
+  margin-bottom: 20px;
+}
+
+#phoneNumberInputForm input {
+  width: 98%;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  height: 25px;
+  color: #4f4f4f;
+  background-color: #e3e3e3; 
+  border: 0 solid #000000;
+  background-size: 15px 15px;
+}
+
+#phoneNumberInputForm input:focus {
+ outline: none;
+}
+
+/***********************/
+
+#socialNumberInputForm {
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #7d7d7d;
+  margin-bottom: 20px;
+}
+
+#socialNumberInputForm input {
+  width: 98%;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  height: 25px;
+  color: #4f4f4f;
+  background-color: #e3e3e3; 
+  border: 0 solid #000000;
+  background-size: 15px 15px;
+}
+
+#socialNumberInputForm input:focus {
+  outline: none;
+}
+
+/***********************/
+
+#userNameInputForm {
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #7d7d7d;
+  margin-bottom: 20px;
+  
+}
+
+#userNameInputForm input {
+  width: 98%;
+  position: relative;
+  display: block;
+  font-size: 18px;
+  height: 25px;
+  color: #4f4f4f;
+  background-color: #e3e3e3; 
+  border: 0 solid #000000;
+  background-size: 15px 15px;
+}
+
+#userNameInputForm input:focus {
+  outline: none;
+}
