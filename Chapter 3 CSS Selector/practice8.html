@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selector Basic</title>
+  <style>
+    /* 상태 선택자와 동위 선택자 복합*/
+    /* checkbox가 checked 되면 바로 뒤 div에 height 0px 적용 */
+    input[type=checkbox]:checked + div {
+      height: 100px;
+    }
+
+    div {
+      overflow: hidden;
+      width: 650px;
+      height: 300px;
+
+      /* 변환 효과 적용 */
+      -ms-transition-duration: 1s;
+      -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      transition-duration: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="checkbox" />
+    <div>
+      <h1>title</h1>
+      <p>
+        abcdefghijklmnopqrstuvwxyz<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

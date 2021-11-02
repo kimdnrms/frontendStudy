@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selector Basic</title>
+  <style>
+    /* 후손 선택자 */
+    /* id header 아래 모든 후손 h1에 적용 */
+    #header h1 { color: red }
+
+    /* id section 아래 모든 후손 h1에 적용 */
+    #section h1 { color: blue }
+
+    /* id section 아래 h1과 p에 적용 */
+    #section h1, #section p { 
+      background-color: green;
+      width: 600px;
+    }
+
+    /* 자손 선택자  */
+    /* id header 아래 h2에 적용 */
+    #header > h2 { 
+      color: gray
+    }
+
+    #section > h2 { 
+      color: plum
+    }
+
+    #section > div > h2 { 
+      background-color: brown;
+    }
+
+    /* 동위 선택자 */
+    /* h1 태그 바로 뒤에 위치하는 h2 태그에 적용 */
+    h1 + h2 {
+      border: 2px solid black;
+    }
+
+    /* section 자손에  h2 태그 뒤에 위치한 모든 p 태그에 적용*/
+    #section > h2 ~ p {
+      background-color: chocolate;
+    }
+
+    /* 반응 선택자 */
+    #header > h1:hover {
+      color: black;
+    }
+
+    #header > h1:active {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1 class="title">H1 Title</h1> 
+    <h2 class="title">"H2 Title</h1> 
+    <div id="subHeader">
+      <h1>H1 Subtitle</h1>
+      <h2>H2 Subtitle</h2>
+    </div>
+  </div>
+  <div id="section">
+    <h1 class="title">h1 article part</h1>
+    <h2 class="title">h2 article part</h2>
+    <p>1. abcdefghijklmnopqrstuvwxyz</p>
+    <p>2. abcdefghijklmnopqrstuvwxyz</p>
+    <p>3. abcdefghijklmnopqrstuvwxyz</p>
+    <p>4. abcdefghijklmnopqrstuvwxyz</p>
+    <div>
+      <h1>h1 abcdefghijklmnopqrstuvwxyz</h1>
+      <h2>h2 abcdefghijklmnopqrstuvwxyz</h2>
+    </div>
+  </div>
+</body>
+</html>

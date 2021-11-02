@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selector Basic</title>
+  <style>
+    #header {
+      color: red;
+    }
+    #wrapper {
+      color: blue;
+    }
+    #content {
+      color: gray;
+      height: 150px;
+    }
+    .selected {
+      border: 3px solid violet;
+      width: 120px;
+    }
+    .skyblueBackground {
+      background-color: skyblue;
+    }
+    li.listSelected {
+      color: green;
+      width: 100px;
+    }
+    input[type=text] {
+      background-color: red;
+    }
+    input[type=password] {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>CSS Selector Basic</h1>
+  </div>
+  <div id="wrapper">
+    <div id="content" class="selected"> test </div>
+    <p class="selected skyblueBackground"> asdfasdf </p>
+    <input />
+    <input type="text"/>
+    <input type="password"/>
+  </div>
+  <ul>
+    <li class="listSelected skyblueBackground">item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+  </ul>
+</body>
+</html>

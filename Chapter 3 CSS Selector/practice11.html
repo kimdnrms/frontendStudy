@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selector Basic</title>
+  <style>
+    /* 시작 문자 선택자 */
+    #test1 > p::first-letter { font-size: 3em; }
+    #test1 > p::first-line { color: red; }
+    
+    /* 전후 문자 선택자 */
+    #test2 > p { counter-increment: rint; }
+    #test2 > p::before { content: counter(rint) "."; }
+    #test2 > p::after { content: " - " attr(data-page) " page" ; }
+    #test2 > p::first-letter { font-size: 3em; }
+
+    /* 반응 문자 선택자 */
+    #test2 > p::selection { background: black; color: red;}
+  </style>
+</head>
+<body>
+  <div id="test1">
+    <h1>Header</h1>
+    <p>
+      abcdefghijklmnopqrstuvwxyz<br/>
+      abcdefghijklmnopqrstuvwxyz<br/>
+    </p>
+    <p>
+      abcdefghijklmnopqrstuvwxyz<br/>
+      abcdefghijklmnopqrstuvwxyz<br/>
+    </p>
+    <p>
+      abcdefghijklmnopqrstuvwxyz<br/>
+      abcdefghijklmnopqrstuvwxyz<br/>
+    </p>
+  </div>
+  <div id="test2">
+    <p data-page="5">
+      abcdefghijklmnopqrstuvwxyz<br/>
+      abcdefghijklmnopqrstuvwxyz<br/>
+    </p>
+    <p data-page="10">
+      abcdefghijklmnopqrstuvwxyz<br/>
+      abcdefghijklmnopqrstuvwxyz<br/>
+    </p>
+    <p data-page="15">
+      abcdefghijklmnopqrstuvwxyz<br/>
+      abcdefghijklmnopqrstuvwxyz<br/>
+    </p>
+  </div>
+</body>
+</html>
