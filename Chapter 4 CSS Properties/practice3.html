@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Style Properties Basic</title>
+  <style>
+    #box1 {
+      display: block;
+    }
+    #box2 {
+      display: inline;
+      background-color: red;
+      width: 300px; /* 적용 안됨 */
+      height: 50px; /* 적용 안됨 */
+      margin: 10px; /* 적용 안됨 */
+    }
+    #box3 {
+      display: inline-block;      
+      background-color: blue;
+      width: 300px;
+      height: 50px;
+      margin: 10px;
+      opacity: 0.2;
+    }
+    #box4 {
+      display: none;
+      width: 300px;
+      height: 50px;
+      margin: 10px;
+    }
+    #box5 {
+      visibility: hidden;
+      width: 300px;
+      height: 50px;
+      margin: 10px;
+    }
+    #box6 {
+      visibility: collapse;
+      width: 300px;
+      height: 50px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <span>Dummy</span>
+  <div id='box1'>
+    <span>abcdefghijklmnopqrstuvwxyz</span>
+  </div>
+  <div id='box2'>
+    <span>abcdefghijklmnopqrstuvwxyz</span>
+  </div>
+  <div id='box3'>
+    <span>abcdefghijklmnopqrstuvwxyz</span>
+  </div>
+  <hr />  
+  <div id='box4'>
+    <span>abcdefghijklmnopqrstuvwxyz</span>
+  </div>
+  <hr />
+  <div id='box5'>
+    <span>abcdefghijklmnopqrstuvwxyz</span>
+  </div>
+  <hr />
+  <div id='box6'>
+    <span>abcdefghijklmnopqrstuvwxyz</span>
+  </div>
+  <span>Dummy</span>
+</body>
+
+</html>
