@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3 Basic Self Practice</title>
+    <style>
+      * { margin: 0; padding:0; }
+      #wrapper{        
+        width: 406px; height: 406px; 
+        margin: 10px auto;
+      }
+      #canvas {
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        border: 3px solid black;
+        border-radius: 200px;
+        position: relative;
+      }
+      .numbers {
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+      }
+      #num12 {
+        left: 180px;
+        top: 0px;
+      }
+      #num11 {
+        left: 90px;
+        top: 30px;
+      }
+      #num1 {
+        right: 90px;
+        top: 30px;
+      }
+      #num10 {
+        left: 30px;
+        top: 95px;
+      }
+      #num2 {
+        right: 30px;
+        top: 95px;
+      }
+      #num9 {
+        left: 0px;
+        top: 182px;
+      }
+      #num3 {
+        right: 0px;
+        top: 182px;
+      }
+      #num8 {
+        left: 30px;
+        bottom: 95px;
+      }
+      #num4 {
+        right: 30px;
+        bottom: 95px;
+      }
+      #num7 {
+        left: 90px;
+        bottom: 30px;
+      }
+      #num5 {
+        right: 90px;
+        bottom: 30px;
+      }
+      #num6 {
+        left: 180px;
+        bottom: 0px;
+      }
+      #hourHand {
+        background: red;
+        width: 6px;
+        height: 100px;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        z-index: 1000;
+        animation: hour 3600s linear 0s infinite;
+        /* transform: rotate(30deg); */
+        transform-origin: 50% 100%;
+      }
+      @keyframes hour {
+        from {
+          transform: rotate(30deg);
+          transform-origin: 50% 100%;
+        }
+        to {
+          transform: rotate(390deg);
+          transform-origin: 50% 100%;
+        }
+      }
+      #minuteHand {
+        background: pink;
+        width: 6px;
+        height: 170px;
+        position: absolute;
+        top: 30px;
+        left: 200px;        
+        animation: min 60s linear 0s infinite;
+        /* transform: rotate(60deg); */
+        transform-origin: 50% 100%;
+      }
+      @keyframes min {
+        from {
+          transform: rotate(60deg);
+          transform-origin: 50% 100%;
+        }
+        to {
+          transform: rotate(420deg);
+          transform-origin: 50% 100%;
+        }
+      }
+      #secondHand {
+        background: blue;
+        width: 4px;
+        height: 170px;
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        animation: sec 1s linear 0s infinite;
+        /* transform: rotate(60deg);
+        transform-origin: 50% 100%; */
+      }
+      @keyframes sec {
+        from {
+          transform: rotate(0deg);
+          transform-origin: 50% 100%;
+        }
+        to {
+          transform: rotate(360deg);
+          transform-origin: 50% 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="canvas">
+        <div id="num12" class="numbers">12</div>
+        <div id="num11" class="numbers">11</div>
+        <div id="num1" class="numbers" >1</div>
+        <div id="num10" class="numbers">10</div>
+        <div id="num2" class="numbers" >2</div>
+        <div id="num9" class="numbers" >9</div>
+        <div id="num3" class="numbers" >3</div>
+        <div id="num8" class="numbers" >8</div>
+        <div id="num4" class="numbers" >4</div>
+        <div id="num7" class="numbers" >7</div>
+        <div id="num5" class="numbers" >5</div>
+        <div id="num6" class="numbers" >6</div>
+        <div id="hourHand" ></div>
+        <div id="minuteHand" ></div>
+        <div id="secondHand" ></div>
+      </div>
+    </div>
+  </body>
+</html>
